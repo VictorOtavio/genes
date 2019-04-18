@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Genes</title>
+    <style>
+      .person {
+        display: inline-block;
+        padding: 5px;
+      }
+      .head {
+        width: 75px;
+        height: 75px;
+        position: relative;
+      }
+      .hair {
+        height: 22px;
+      }
+      .leye, .reye {
+        background-color: #fff;
+        position: absolute;
+        width: 18px;
+        height: 16px;
+        top: 33px;
+      }
+      .leye {
+        left: 12px;
+      }
+      .reye {
+        right: 12px;
+      }
+      .eyebrow, .pupil {
+        position: absolute;
+        content: '';
+      }
+      .eyebrow {
+        width: 100%;
+        height: 6px;
+        top: -2px;
+      }
+      .pupil {
+        width: 8px;
+        height: 6px;
+        bottom: 0;
+        left: 2px;
+      }
+      .mouth {
+        position: absolute;
+        width: 18px;
+        height: 8px;
+        bottom: 10px;
+        left: 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="peoples"></div>
+    <button onclick="javascript:makeChildren();">make</button>
+    <button onclick="javascript:newCouple();">new</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
