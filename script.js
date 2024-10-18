@@ -71,6 +71,8 @@ function bornFirstCouple() {
 
   born(male)
   born(female)
+
+  COUPLE = document.getElementsByClassName("person");
 }
 
 function born(DNA) {
