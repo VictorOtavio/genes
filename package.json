@@ -4,18 +4,19 @@
   "description": "A simple PoC",
   "author": "Victor Otávio Ferreira <victor@ferreira.id>",
   "license": "LICENSE",
+  "private": true,
   "type": "module",
-  "main": "dist/index.js",
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev:tsc": "tsc --watch --preserveWatchOutput",
-    "dev:node": "node --enable-source-maps --watch dist/index.js",
-    "dev": "pnpm run \"/dev:/\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@types/node": "^22.7.6",
-    "typescript": "^5.6.3"
+  "dependencies": {
+    "nuxt": "^3.13.2",
+    "vue": "latest",
+    "vue-router": "latest"
   }
 }
